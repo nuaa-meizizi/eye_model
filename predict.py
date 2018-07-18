@@ -49,7 +49,7 @@ def getmatrix(eyeargv):
   #  print(dic)
     c = convert(dic)
     return c
-fr_n="E:/raw_project/eye_model/eye_predict.txt"
+fr_n="eye_predict.txt"
 
 X,y=load_svmlight_file(fr_n)
 

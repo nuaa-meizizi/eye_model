@@ -26,7 +26,7 @@ from sklearn.metrics import  accuracy_score  #计算ACC
 from sklearn.externals import joblib
 
 #导入训练数据，这里的训练数据使用Under-Sampling处理过的  
-fr_n="E:/raw_project/eye_model/res.txt"
+fr_n="res.txt"
 
 X=pd.read_csv(fr_n,sep=' ')
 #y = X[:-1]
@@ -77,4 +77,4 @@ print("MCC: %f " %matthews_corrcoef(y_test,y_pred))
 print( "ACC:  %f "% accuracy_score(y_test,y_pred))
 print("AUC Score (Test): " , metrics.roc_auc_score(y_test,y_pred))
 
-joblib.dump(clf,'rf_health.model')
+joblib.dump(clf,'rf_health_1.model')
